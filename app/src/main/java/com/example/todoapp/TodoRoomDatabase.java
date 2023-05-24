@@ -93,7 +93,7 @@ public abstract class TodoRoomDatabase extends RoomDatabase {
             try {
                 //format the date in year, month ,day
                 DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-                todoDate = format.parse("2022/05/08");
+                todoDate = format.parse("2023/06/08");
             }//if try block does not execute
             catch (ParseException ex) {
                 ex.printStackTrace();
@@ -107,7 +107,7 @@ public abstract class TodoRoomDatabase extends RoomDatabase {
             /**
              * Inserting data in user_table
              */
-            userDao.insert(new EUser(0, "rajan", "rajan123"));
+            userDao.insert(new EUser(0, "bipina", "bipina123"));
             return null;
         }
     }
